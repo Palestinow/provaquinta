@@ -1,3 +1,5 @@
+https://refactoring.guru/pt-br/design-patterns/catalog
+
 # Guia rápido de Git
 
 ## 1. Configuração inicial
