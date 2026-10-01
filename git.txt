@@ -1,0 +1,56 @@
+git init
+    inicia um repositório Git na pasta atual.
+
+git remote add origin URL 
+    conecta o repositório local a um repositório remoto no GitHub. Troque `URL` pelo endereço correto.
+
+git remote -v
+    mostra os repositórios remotos conectados.
+
+git status
+    mostra em qual branch você está e quais arquivos foram alterados.
+
+git add .
+    prepara todas as alterações para o próximo commit.
+
+git diff 
+    mostra as alterações que ainda não foram adicionadas ao commit.
+
+git commit -m "mensagem"
+    salva as alterações preparadas em um commit com uma mensagem.
+
+git log --oneline
+    mostra o histórico recente de commits de forma resumida.
+
+git push
+    envia os commits para o repositório remoto, quando a branch já está conectada.
+
+git push -u origin nome-da-branch
+    envia a branch ao remoto pela primeira vez e configura o rastreamento entre elas.
+
+git pull
+    baixa e integra as alterações da branch remota atual.
+
+git fetch
+    atualiza as informações do repositório remoto, sem integrar as alterações à branch atual.
+
+git branch
+    lista as branches locais; um `*` indica a branch atual.
+
+git branch --show-current
+    mostra apenas o nome da branch atual.
+
+git switch nome-da-branch
+    muda para uma branch existente.
+
+git switch -c nome-da-nova-branch 
+    cria uma branch e muda para ela.
+
+---
+cd ~/Projetos/meu-projeto
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main <--- serve pra renomear a main caso seja master
+git remote add origin https://github.com/seuusuario/meu-projeto.git
+git push -u origin main
